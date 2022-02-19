@@ -2,9 +2,7 @@ n = 10
 impares = [n for n in range (n+1) if n%2 !=0]
 print(*impares, sep=", ")
 
-
 print ('generadores')
-
 
 def pares (maximo):
     num=0
@@ -27,7 +25,19 @@ def paresgen(max):
 
 
 num1pares=paresgen(10)
+print (paresgen) # imprime el objeto generador 
+
+print(next(num1pares)) # primera iteracion del generador
+print(next(num1pares)) # segunda iteracion del generador
+print(next(num1pares)) # asi sucecivamente hasta 
 print(next(num1pares))
-print(next(num1pares))
-print(next(num1pares))
-print(next(num1pares))
+
+g=paresgen(10)
+# imprime una lista de las iteraciones de el generador 
+lista=list(g)
+# imprime una tupla de las iteraciones de el generador
+tupla=tuple(g)
+print (lista)
+print (tupla)
+
+
