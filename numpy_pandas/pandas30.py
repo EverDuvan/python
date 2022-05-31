@@ -1,6 +1,6 @@
 import pandas as pd 
 
-print ('genera dataframe a partir del documento csv')
+print (' genera dataframe a partir del documento csv '.center(80,'*'))
 df = pd.read_csv("EnterpriseSurvey.csv")
 #muestra el df
 print (df)
