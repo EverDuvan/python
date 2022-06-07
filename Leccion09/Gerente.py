@@ -1,8 +1,5 @@
 from Empleado import Empleado
 
-
-from Empleado import Empleado
-
 class Gerente(Empleado):
 
     def __init__(self, nombre, sueldo, departamento):
@@ -16,6 +13,7 @@ class Gerente(Empleado):
     @departamento.setter
     def departamento(self, departamento):
         self._departamento = departamento
+        
     def __str__(self):
         return f'Gerente [Departamento: {self._departamento}] {super().__str__()}'
 

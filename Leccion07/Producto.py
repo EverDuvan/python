@@ -32,5 +32,5 @@ class Producto:
         self._precio = precio
 
     def __str__(self) -> str:
-        return f' Id de producto: {self._id_producto}, Nombre: {self._nombre}, Precio: {self._precio}'
+        return f'Id de producto: {self._id_producto}, Nombre: {self._nombre}, Precio: {self._precio}'
 
