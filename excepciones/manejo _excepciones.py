@@ -1,13 +1,16 @@
 from NumIdenticos import NumIdenticos
 
-print ('ejemplo 01')
+####################################
+print (' Ejemplo 1 '.center(40,'#'))
+
 try:
     10/0
 except Exception as e:
     print (f'error: {e}')
 
-######################################
-print ('ejemplo 02')
+####################################
+print (' Ejemplo 2 '.center(40,'#'))
+
 resultado = None
 a = 10
 b = 0
@@ -18,8 +21,9 @@ except Exception as e:
 print (resultado)
 print ('continuamos')
 
-######################################
-print ('ejemplo 03')
+####################################
+print (' Ejemplo 3 '.center(40,'#'))
+
 resultado = None
 a = '10'
 b = 0
@@ -30,8 +34,9 @@ except Exception as e:
 print (resultado)
 print ('continuamos')
 
-######################################
-print ('ejemplo 04')
+####################################
+print (' Ejemplo 4 '.center(40,'#'))
+
 resultado = None
 a = '10'
 b = 0
@@ -46,8 +51,9 @@ except Exception as e:
 print (resultado)
 print ('continuamos')
 
-######################################
-print ('ejemplo 05')
+####################################
+print (' Ejemplo 5 '.center(40,'#'))
+
 resultado = None
 try:
     #a = int(input('primer numero: '))
@@ -62,8 +68,9 @@ except Exception as e:
 print (resultado)
 print ('continuamos')
 
-######################################
-print ('ejemplo 06')
+####################################
+print (' Ejemplo 6 '.center(40,'#'))
+
 resultado = None
 try:
     #a = int(input('primer numero: '))
@@ -83,8 +90,9 @@ finally:
 print (resultado)
 print ('continuamos')
 
-######################################
-print ('ejemplo 07 Class Numidenticos')
+####################################
+print (' Ejemplo 7 Class Numidenticos '.center(40,'#'))
+
 resultado = None 
 try:
     a = int(input('primer numero: '))

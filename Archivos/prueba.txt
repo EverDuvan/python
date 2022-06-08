@@ -1,0 +1,2 @@
+linea 01- ingresar texto de prueba
+hola linea 02- texto con tilde = árbol 
