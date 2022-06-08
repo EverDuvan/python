@@ -56,16 +56,25 @@ class Computador:
 
     def __str__(self):
         return f'''
-        computador {self._nombre} id: {self._id_computador}
+        PC: {self._nombre} id: {self._id_computador}
         {self._monitor}
         {self._teclado}
         {self._raton}
         '''
 
+''' 
 teclado1 = Teclado('HP','BLUETOOTH')
 raton1 = Raton('ACER','USB')
-monitor1 = Monitor('Hp',15)
-
-computador1 = Computador('HP',monitor1,teclado1,raton1)
+monitor1 = Monitor('LG',20)
+computador1 = Computador('office',monitor1,teclado1,raton1)
 print (computador1)
 
+
+teclado2 = Teclado('HP','BLUETOOTH')
+raton2 = Raton('ACER','USB')
+monitor2 = Monitor('SHARP',22)
+computador2 = Computador('gaming',monitor2,teclado2,raton2)
+print (computador2)
+
+
+ '''
