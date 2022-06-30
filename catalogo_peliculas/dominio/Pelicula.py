@@ -1,6 +1,3 @@
-from mailbox import NoSuchMailboxError
-
-
 class Pelicula:
     contador_peliculas = 0
 
