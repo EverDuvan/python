@@ -1,6 +1,6 @@
 import psycopg2
 
-conexion = psycopg2.connect(user = 'everduvan', password = '030481', host = 'localhost', port = '5432', database = 'data_procesing2')
+conexion = psycopg2.connect(user = 'xxxx', password = 'xxxx', host = 'localhost', port = '5432', database = 'data_procesing2')
 
 try:
     with conexion:
