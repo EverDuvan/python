@@ -285,3 +285,85 @@
 04:18:38 PM: DEBUG [cursor_del_pool.py:16] Se ejecurta metodo  __exit__
 04:18:38 PM: DEBUG [cursor_del_pool.py:22] Commit de la transaccion
 04:18:38 PM: DEBUG [conexion.py:42] Regresamos la conexion al pool: <connection object at 0x0000020B16D5CD00; dsn: 'user=postgres password=xxx dbname=db_prueba host=localhost port=5432', closed: 0>
+12:23:06 AM: DEBUG [cursor_del_pool.py:10] Inicio de metodo with __enter__
+12:23:06 AM: DEBUG [conexion.py:26] Creación del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x000001DC573E87C0>
+12:23:06 AM: DEBUG [conexion.py:36] Conexion obtenida del pool: <connection object at 0x000001DC571B0D00; dsn: 'user=postgres password=xxx dbname=db_prueba host=localhost port=5432', closed: 0>
+12:23:06 AM: DEBUG [cursor_del_pool.py:16] Se ejecurta metodo  __exit__
+12:23:06 AM: DEBUG [cursor_del_pool.py:22] Commit de la transaccion
+12:23:06 AM: DEBUG [conexion.py:42] Regresamos la conexion al pool: <connection object at 0x000001DC571B0D00; dsn: 'user=postgres password=xxx dbname=db_prueba host=localhost port=5432', closed: 0>
+12:23:06 AM: DEBUG [persona_dao.py:71] 
+            ID : 1, Nombre : jefry, 
+            Apellido : cossio, Email : jcossio@mail.com
+        
+12:23:06 AM: DEBUG [persona_dao.py:71] 
+            ID : 2, Nombre : karla, 
+            Apellido : sanches, Email : ksanches@gmail.com
+        
+12:23:06 AM: DEBUG [persona_dao.py:71] 
+            ID : 3, Nombre : Carlos, 
+            Apellido : Lara, Email : clara@mail.com
+        
+12:23:06 AM: DEBUG [persona_dao.py:71] 
+            ID : 4, Nombre : sofia, 
+            Apellido : giraldo, Email : sgiraldo@mail.com
+        
+12:23:06 AM: DEBUG [persona_dao.py:71] 
+            ID : 7, Nombre : maria, 
+            Apellido : esparza, Email : mesparza@gmail.com
+        
+12:23:06 AM: DEBUG [persona_dao.py:71] 
+            ID : 9, Nombre : jose, 
+            Apellido : ponce, Email : jponce@gmail.com
+        
+12:23:06 AM: DEBUG [persona_dao.py:71] 
+            ID : 10, Nombre : pedro, 
+            Apellido : najera, Email : pnajera@mail.com
+        
+12:25:34 AM: DEBUG [cursor_del_pool.py:10] Inicio de metodo with __enter__
+12:25:34 AM: DEBUG [conexion.py:26] Creación del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x000002151D6D6940>
+12:25:34 AM: DEBUG [conexion.py:36] Conexion obtenida del pool: <connection object at 0x000002151D470D00; dsn: 'user=postgres password=xxx dbname=db_prueba host=localhost port=5432', closed: 0>
+12:25:34 AM: DEBUG [persona_dao.py:32] persona a insertar: 
+            ID : None, Nombre : raul, 
+            Apellido : cocio, Email : rcocio@mail.com
+        
+12:25:34 AM: DEBUG [cursor_del_pool.py:16] Se ejecurta metodo  __exit__
+12:25:34 AM: DEBUG [cursor_del_pool.py:22] Commit de la transaccion
+12:25:34 AM: DEBUG [conexion.py:42] Regresamos la conexion al pool: <connection object at 0x000002151D470D00; dsn: 'user=postgres password=xxx dbname=db_prueba host=localhost port=5432', closed: 0>
+12:25:34 AM: DEBUG [persona_dao.py:56] personas insertadas: 1
+12:25:34 AM: DEBUG [cursor_del_pool.py:10] Inicio de metodo with __enter__
+12:25:34 AM: DEBUG [conexion.py:36] Conexion obtenida del pool: <connection object at 0x000002151D470D00; dsn: 'user=postgres password=xxx dbname=db_prueba host=localhost port=5432', closed: 0>
+12:25:34 AM: DEBUG [cursor_del_pool.py:16] Se ejecurta metodo  __exit__
+12:25:34 AM: DEBUG [cursor_del_pool.py:22] Commit de la transaccion
+12:25:34 AM: DEBUG [conexion.py:42] Regresamos la conexion al pool: <connection object at 0x000002151D470D00; dsn: 'user=postgres password=xxx dbname=db_prueba host=localhost port=5432', closed: 0>
+12:25:34 AM: DEBUG [persona_dao.py:71] 
+            ID : 1, Nombre : jefry, 
+            Apellido : cossio, Email : jcossio@mail.com
+        
+12:25:34 AM: DEBUG [persona_dao.py:71] 
+            ID : 2, Nombre : karla, 
+            Apellido : sanches, Email : ksanches@gmail.com
+        
+12:25:34 AM: DEBUG [persona_dao.py:71] 
+            ID : 3, Nombre : Carlos, 
+            Apellido : Lara, Email : clara@mail.com
+        
+12:25:34 AM: DEBUG [persona_dao.py:71] 
+            ID : 4, Nombre : sofia, 
+            Apellido : giraldo, Email : sgiraldo@mail.com
+        
+12:25:34 AM: DEBUG [persona_dao.py:71] 
+            ID : 7, Nombre : maria, 
+            Apellido : esparza, Email : mesparza@gmail.com
+        
+12:25:34 AM: DEBUG [persona_dao.py:71] 
+            ID : 9, Nombre : jose, 
+            Apellido : ponce, Email : jponce@gmail.com
+        
+12:25:34 AM: DEBUG [persona_dao.py:71] 
+            ID : 10, Nombre : pedro, 
+            Apellido : najera, Email : pnajera@mail.com
+        
+12:25:34 AM: DEBUG [persona_dao.py:71] 
+            ID : 12, Nombre : raul, 
+            Apellido : cocio, Email : rcocio@mail.com
+        

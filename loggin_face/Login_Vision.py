@@ -1,5 +1,3 @@
-#--------------------------------------Importamos librerias--------------------------------------------
-
 from tkinter import *
 import os
 import cv2
@@ -8,7 +6,6 @@ from mtcnn.mtcnn import MTCNN
 import numpy as np
 
 #------------------------ Crearemos una funcion que se encargara de registrar el usuario ---------------------
-
 def registrar_usuario():
     usuario_info = usuario.get() #Obetnemos la informacion alamcenada en usuario
     contra_info = contra.get() #Obtenemos la informacion almacenada en contra
@@ -24,7 +21,6 @@ def registrar_usuario():
 
     #Ahora le diremos al usuario que su registro ha sido exitoso
     Label(pantalla1, text = "Registro Convencional Exitoso", fg = "green", font = ("Calibri",11)).pack()
-    
 
 #--------------------------- Funcion para almacenar el registro facial --------------------------------------
     
@@ -237,7 +233,7 @@ def pantalla_principal():
     global pantalla          #Globalizamos la variable para usarla en otras funciones
     pantalla = Tk()
     pantalla.geometry("300x250")  #Asignamos el tamaño de la ventana 
-    pantalla.title("Aprende e Ingenia")       #Asignamos el titulo de la pantalla
+    pantalla.title("LOGGIN_FACE")       #Asignamos el titulo de la pantalla
     Label(text = "Login Inteligente", bg = "gray", width = "300", height = "2", font = ("Verdana", 13)).pack() #Asignamos caracteristicas de la ventana
     
 #------------------------- Vamos a Crear los Botones ------------------------------------------------------
