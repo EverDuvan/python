@@ -1,4 +1,3 @@
-from cgitb import handler
 import logging as log
 
 log.basicConfig(level=log.DEBUG,
@@ -10,11 +9,8 @@ log.basicConfig(level=log.DEBUG,
                 ])
 
 if __name__ == '__main__':
-
-    log.debug('Mensaje nivel debug')
-    log.info('Mensaje nivel info')
-    log.warning('Mensaje nivel warning')
-    log.error('Mensaje nivel error')
-    log.critical('Mensaje nivel critico')
-
-
+    log.debug('Mensaje a nivel debug')
+    log.info('Mensaje a nivel info')
+    log.warning('Mensaje a nivel de warning')
+    log.error('Mensaje a nivel de error')
+    log.critical('Mensaje a nivel critico')
