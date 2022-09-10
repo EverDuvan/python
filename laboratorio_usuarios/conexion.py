@@ -3,11 +3,11 @@ from psycopg2 import pool
 import sys
 
 class Conexion:
-    _DATABASE = 'test_db'
+    _DATABASE = 'db_prueba'
     _USERNAME = 'postgres'
-    _PASSWORD = 'admin'
+    _PASSWORD = '030481'
     _DB_PORT = '5432'
-    _HOST = '127.0.0.1'
+    _HOST = 'localhost'
     _MIN_CON = 1
     _MAX_CON = 5
     _pool = None
