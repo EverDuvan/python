@@ -1,4 +1,4 @@
-import pandas as pd 
+import pandas as pd
 
 print (' genera dataframe a partir del documento csv '.center(80,'*'))
 df = pd.read_csv("EnterpriseSurvey.csv")
@@ -12,7 +12,7 @@ print ('muestra los ultimos datos del df o la cantidad que se ponga entre los pa
 print(df.tail(4))
 
 print ('muestra informacion estadistica del df, como la media el minimo y el maximo ')
-print(df.describe())
+print(f'describe: {df.describe()}')
 
 print ('muestra la informacion de la columna definida entre llaves ')
 print(df["Variable_category"])
