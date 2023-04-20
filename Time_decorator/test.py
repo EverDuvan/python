@@ -1,5 +1,6 @@
 from time import time
 import numpy as np
+import pandas as pd
 
 def count_elapsed_time(f):
     """
@@ -19,6 +20,10 @@ def count_elapsed_time(f):
     
     return wrapper
 
+datos = {'Nombre': ['Juan', 'María', 'Pedro', 'Luisa'],
+         'Edad': [25, 30, 35, 28],
+         'Ciudad': ['Madrid', 'Barcelona', 'Valencia', 'Sevilla']}
+
 lista_de_listas=[ [1  ,-4],[12 , 3],[7.2, 5]]
 
 @count_elapsed_time
@@ -27,4 +32,8 @@ def test():
     print(matriz)
 test()
 
-
+@count_elapsed_time
+def printdf():
+    df = pd.DataFrame(datos)
+    print(df)
+printdf()
