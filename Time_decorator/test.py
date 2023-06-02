@@ -15,7 +15,8 @@ def count_elapsed_time(f):
         ret = f()
         # Calculate the elapsed time.
         elapsed_time = time() - start_time
-        print("Elapsed time: %0.10f seconds." % elapsed_time)
+        #print("Elapsed time: %0.10f seconds." % elapsed_time)
+        print(f'Elapsed time in function [ {f.__name__} ]: {round(elapsed_time, 4)} seconds.')
         return ret
     
     return wrapper
