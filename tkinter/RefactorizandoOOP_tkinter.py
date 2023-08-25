@@ -7,7 +7,6 @@ class ComponentesVentana(tk.Tk):
         super().__init__()
         self.geometry('650x400+1500+200')
         self.title('Componentes')
-        self.iconbitmap('icono.ico')
         self._crear_tabs()
 
     def _crear_componentes_tabulador1(self, tabulador):
