@@ -64,8 +64,9 @@ def registro_facial():
     
 #------------------------Crearemos una funcion para asignar al boton registro --------------------------------
 def registro():
+    #Globalizamos las variables para usarlas en otras funciones
+    global contra  
     global usuario
-    global contra  #Globalizamos las variables para usarlas en otras funciones
     global usuario_entrada
     global contra_entrada
     global pantalla1
