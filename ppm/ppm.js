@@ -1,3 +1,24 @@
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
+
+let intervalId;
+
+function startGeneratingNumbers(intervalInSeconds, durationInSeconds, callback) {
+    const interval = intervalInSeconds * 1000;
+    const duration = durationInSeconds * 1000;
+
+    intervalId = setInterval(() => {
+        const randomNumber = getRandomInt(251);
+        callback(randomNumber); // Llama a la función callback con el número aleatorio
+    }, interval);
+
+    setTimeout(() => {
+        clearInterval(intervalId);
+    }, duration);
+}
+
+
 function alerta_pulsaciones(edad, pulsaciones, genero) {
     // ppm *inadecuado*, *normal*, *bueno*, *excelente*
     const rangos_hombres = {
@@ -48,4 +69,9 @@ function alerta_pulsaciones(edad, pulsaciones, genero) {
     return "Edad fuera de rango";
 }
 
-console.log(alerta_pulsaciones(125, 55, "H"));
+// Llama a la función para comenzar a generar números aleatorios
+// Cada 3 segundos y durante 12 segundos
+startGeneratingNumbers(3, 18, (ppm_values) => {
+    const categoria = alerta_pulsaciones(70, ppm_values, "H"); // Usa ppm_values como entrada para alerta_pulsaciones
+    console.log(`ppm: ${ppm_values}, Categoría: ${categoria}`); // Imprime las pulsaciones y la categoría
+});
