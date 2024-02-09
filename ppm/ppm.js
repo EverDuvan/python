@@ -68,10 +68,22 @@ function alerta_pulsaciones(edad, pulsaciones, genero) {
 
     return "Edad fuera de rango";
 }
+let consecutivoInadecuado = 0; // Variable para contar las veces consecutivas que se obtiene "INADECUADO"
 
 // Llama a la función para comenzar a generar números aleatorios
 // Cada 3 segundos y durante 12 segundos
-startGeneratingNumbers(3, 18, (ppm_values) => {
+startGeneratingNumbers(6, 30, (ppm_values) => {
     const categoria = alerta_pulsaciones(70, ppm_values, "H"); // Usa ppm_values como entrada para alerta_pulsaciones
     console.log(`ppm: ${ppm_values}, Categoría: ${categoria}`); // Imprime las pulsaciones y la categoría
+
+    if (categoria === "INADECUADO") {
+        consecutivoInadecuado++; // Incrementa el contador de "INADECUADO"
+        if (consecutivoInadecuado === 3) {
+            console.log("¡Alarma! Se han obtenido 'INADECUADO' tres veces seguidas.");
+            // Aquí puedes agregar código para activar una alarma o notificar al usuario
+            consecutivoInadecuado = 0; // Reinicia el contador
+        }
+    } else {
+        consecutivoInadecuado = 0; // Reinicia el contador si no es "INADECUADO"
+    }
 });
